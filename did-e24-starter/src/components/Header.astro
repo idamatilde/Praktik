@@ -1,5 +1,40 @@
 ---
 ---
-<div>
-Header - tilføj navigation mm.
+<section>
+<div class="bg-[#398E7A]">
+<section class="flex flex-row content-center items-center justify-between px-28  py-[5px]"><div><p class="text-white">Hvem er jeg?</p></div>
+    <div class=""><p class="text-white">Kompetencer</p></div>
+    <div class=""><p class="text-white">Hvad jeg søger</p></div>
+    <div class=""><p class="text-white">Kontakt mig</p></div></section>
 </div>
+<div class="simple_container">
+    <div class="simple_indicator"></div>
+  </div>
+</section>
+
+  <script>
+    window.addEventListener("scroll", onScroll);
+  
+    function onScroll() {
+      let scrolled =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      let height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      let scrolledfactor = scrolled / height;
+      document.querySelector(".simple_indicator").style.width =
+        `${scrolledfactor * 100}%`;
+    }
+  </script>
+  <style>
+    .simple_container {
+      width: 100%;
+      height: 0.3rem;
+      background-color: none;
+    }
+    .simple_indicator {
+      width: 0%;
+      height: 100%;
+      background-color:#FB3BA5;
+    }
+  </style>

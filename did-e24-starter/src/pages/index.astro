@@ -9,20 +9,31 @@ import text1 from "../assets/images/header-text/multimedie.svg";
 import text2 from "../assets/images/header-text/designer.svg";
 import text3 from "../assets/images/header-text/med-en.svg";
 import text4 from "../assets/images/header-text/passion-for.svg";
+import transImg from "../assets/images/transition.webp";
 ---
 <MainLayout title="Titel">
-	<section id="hero" class="grid grid-cols-2 md:px-72">
-		<div class="grid justify-items-end h-72">
-			<Image class="h-max w-auto" src={text1} alt="multimedie-"></Image>
-			<Image class="h-16 w-auto" src={text2} alt="multimedie-"></Image>	
-			<Image class="h-9 w-auto" src={text3} alt="multimedie-"></Image>	
-			<Image class="h-9 w-auto" src={text4} alt="multimedie-"></Image>	
-<!-- <h1>Multimedie-</h1><h1>designer</h1>
-<h2>Med en</h2><h2>passion for</h2>
-<h2>User interface</h2> -->
+	<!-- <Image class="h-max w-auto md:pl-[420px] md:pr-[600px]" src={text1} alt="multimedie-"></Image>
+	<section id="hero" class="grid grid-cols-2 px-72">
+		<div class="flex flex-col items-end h-min">
+			<Image class="h-16 w-auto" src={text2} alt="multimedie-"></Image>
+			<Image class="pt-8 h-auto w-48" src={text3} alt="multimedie-"></Image>	
+			<Image class="h-auto w-80" src={text4} alt="multimedie-"></Image>
 </div>
-	<Image src={cutout} alt="Udklip af mig"></Image>
+	<Image class="w-auto h-[600px]" src={cutout} alt="Udklip af mig"></Image>
+	</section> -->
+
+	<section id="hero" class="grid grid-cols-7 pl-80 pr-40">	
+		<Image class="h-max w-auto col-span-5" src={text1} alt="multimedie-"></Image>
+		<div class="col-start-1 col-span-4  ">
+			<div class="flex flex-col items-end h-min">
+			<Image class="w-auto h-30" src={text2} alt="multimedie-"></Image>
+			<Image class="pt-10" src={text3} alt="multimedie-"></Image>	
+			<Image class="" src={text4} alt="multimedie-"></Image>
+		</div>
+</div>
+	<Image class="w-max h-max md:w-[auto] md:h-[40rem] pl-10 col-start-5 col-span-3" src={cutout} alt="Udklip af mig"></Image>
 	</section>
+<Image class="w-max h-auto" src={transImg} alt="Transitional image of paintsplatter">
 	<article>
 		<h1>Index overskrift</h1>
 		<Button>Klik!</Button>
