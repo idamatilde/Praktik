@@ -60,6 +60,28 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+@layer base {
+  .outfit {
+    font-family: "outfit";
+    font-weight: 400;
+    font-size: 22px;
+  }
+
+  p {
+    @apply outfit;
+    color: #ffffff;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p,
+  li {
+    @apply outfit;
+  }
+}
+
 /* .fisterra {
   font-family: fisterra-morte, sans-serif;
   font-weight: 700;
