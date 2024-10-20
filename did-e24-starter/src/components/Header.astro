@@ -1,12 +1,126 @@
 ---
 ---
+<section class="bg-[#357868]">
+<div class="burger-menu">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+<div class="header_nav_container px-28 py-[6px]">
+  <div id="nav-bar-top">
+    <nav class="topnav flex flex-row content-center items-center justify-between">
+      <a class="text-white" href="#HvemErJeg">Hvem er jeg?</a>
+      <a class="text-white" href="#Kompetencer">Kompetencer</a>
+      <a class="text-white" href="#HvadJegSoger">Hvad jeg søger</a>
+      <a class="text-white" href="#sec3">Kontakt mig</a>
+    </nav>
+  </div>
+</div>
+<div class="scroll_indicator">
+  <div class="simple_container">
+    <div class="simple_indicator"></div>
+  </div>
+</div>
+</section>
+<style>
+.simple_container {
+      width: 100%;
+      height: 0.3rem;
+      background-color: none;
+    }
+  .simple_indicator {
+      width: 0%;
+      height: 100%;
+      background-color:#FB3BA5;}
+  .header_nav_container {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+  }
+  #nav-bar-top {
+    text-align: center;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    float: clear;
+  }
+  .topnav {
+    flex-wrap: wrap;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger-menu {
+    cursor: pointer;
+    z-index: 2;
+    display: none; /* Hide the burger menu icon by default */
+    cursor: pointer;
+    position: fixed; /* Position the burger menu fixed to the viewport */
+    top: 20px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    z-index: 9999; /* Ensure the burger menu appears above other content */
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FB3BA5;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  /* Add hover effect to the burger menu lines */
+  .bar:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .topnav {
+      display: none; /* Hide the navigation links by default on smaller screens */
+    }
+
+    .topnav.active {
+      display: flex; /* Show the navigation links when burger menu is clicked */
+    }
+
+    .burger-menu {
+      display: block; /* Show the burger menu icon on smaller screens */
+    }
+  
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.querySelector(".burger-menu");
+    const navLinks = document.querySelector(".topnav");
+
+    burgerMenu.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  });
+</script>
+<script>
+  window.addEventListener("scroll", onScroll);
+
+  function onScroll() {
+    let scrolled =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    let height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let scrolledfactor = scrolled / height;
+    document.querySelector(".simple_indicator").style.width =
+      `${scrolledfactor * 100}%`;
+  }
+</script>
+
+<!-- ---
+---
 <section>
 <div class="bg-[#357868]">
-<!-- <section class="flex flex-row content-center items-center justify-between px-28  py-[0px]"><div><p class="text-white">Hvem er jeg?</p></div>
-    <div class=""><p class="text-white">Kompetencer</p></div>
-    <div class=""><p class="text-white">Hvad jeg søger</p></div>
-    <div class=""><p class="text-white">Kontakt mig</p></div></section>
-</div> -->
 <section class="px-28 py-[6px]">
     <nav class="flex flex-row content-center items-center justify-between">
       <a class="text-white" href="#HvemErJeg">Hvem er jeg?</a>
@@ -46,4 +160,4 @@
       height: 100%;
       background-color:#FB3BA5;
     }
-  </style>
+  </style> -->
