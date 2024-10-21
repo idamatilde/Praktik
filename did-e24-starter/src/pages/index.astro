@@ -11,10 +11,12 @@ import text3 from "../assets/images/header-text/med-en.svg";
 import text4 from "../assets/images/header-text/passion-for.svg";
 // import transImg from "../assets/images/paint-trans-top.webp";
 import transImg2 from "../assets/images/paint-trans-bottom.webp";
+import Stjerner from "../components/Stjerner.astro";
 import frimaerke from "../assets/images/pfp-frimaerke.png";
 import Bg1 from "../components/BG1.astro";
 import Bg2 from "../components/BG2.astro";
 import Rating from "../components/Rating.astro";
+import TekstAnimation from "../components/TekstAnimation.astro";
 ---
 <MainLayout title="Titel">
 	<!-- <Image class="h-max w-auto md:pl-[420px] md:pr-[600px]" src={text1} alt="multimedie-"></Image>
@@ -26,22 +28,38 @@ import Rating from "../components/Rating.astro";
 </div>
 	<Image class="w-auto h-[600px]" src={cutout} alt="Udklip af mig"></Image>
 	</section> -->
-
-	<section id="hero" class="md:grid md:grid-cols-7 md:pl-80 md:pr-40 hidden">	
+	<!-- <section id="hero" class="md:grid md:grid-cols-7 md:pl-80 md:pr-40 hidden">	
 		<Image class="h-max w-auto col-span-5" src={text1} alt="multimedie-"></Image>
 		<div class="col-start-1 col-span-4  ">
-			<div class="flex flex-col items-end h-min">
+			<div class="flex flex-col flex-end items-end h-min">
 			<Image class="w-auto h-30" src={text2} alt="multimedie-"></Image>
 			<Image class="pt-10" src={text3} alt="multimedie-"></Image>	
 			<Image class="" src={text4} alt="multimedie-"></Image>
+			<TekstAnimation /></div>
 		</div>
+</div>
+	<Image class="w-max h-max md:w-[auto] md:h-[40rem] pl-10 col-start-5 col-span-3" src={cutout} alt="Udklip af mig"></Image>
+	</section> -->
+	<section id="hero" class="md:grid md:grid-cols-7 md:pl-80 md:pr-40 hidden">
+		<Image class="h-max w-auto col-span-5" src={text1} alt="multimedie-"></Image>
+		<div class="col-start-1 col-span-4  ">
+			<div class="flex flex-col flex-end items-end h-min">
+			<Image class="w-auto h-30" src={text2} alt="multimedie-"></Image>
+			<Image class="pt-10" src={text3} alt="multimedie-"></Image>	
+			<Image class="" src={text4} alt="multimedie-"></Image>
+			<div class="grid grid-cols-2 z-20 mt-4 lg:mt-0">
+			<div class="lg:col-span-2 mr-4 md:mr-0"><TekstAnimation> <TekstAnimation/></div>
+		  </div>
+			</div>
+		</div>
+		
 </div>
 	<Image class="w-max h-max md:w-[auto] md:h-[40rem] pl-10 col-start-5 col-span-3" src={cutout} alt="Udklip af mig"></Image>
 	</section>
 	<div id="HvemErJeg"></div>
 	<Bg1><section class="bg-[#398E7A] md:grid md:grid-cols-2 flex flex-col md:px-44 px-6">
-		<div class="flex flex-row md:flex-col">
-		<Image class="md:h-auto h-[100%] md:w-[400px] w-56" src={frimaerke} alt="billede af mig med frimærkeramme"></Image>
+		<div class="flex flex-row md:flex-col md:pb-0 pb-5">
+		<Image class="md:h-auto h-[100%] md:w-[400px] w-48" src={frimaerke} alt="billede af mig med frimærkeramme"></Image>
 		<h2 class=".fisterra md:hidden flex flex-wrap text-wrap text-6xl">Lidt om mig</h2>
 	</div>
 		<div class="flex flex-col">
@@ -54,22 +72,9 @@ import Rating from "../components/Rating.astro";
 </Bg1>
 	<section class="w-full overflow-hidden md:relative md:-translate-y-1/4">
 	
-<div class="flex flex-col items-center gap-14 z-0 pb-24">
-  <svg class="justify-self-center rotate-center" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-	<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-	</svg>
-	<svg class="justify-self-center rotate-center-left" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-		<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-		</svg>
-		<svg class="justify-self-center rotate-center" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-			<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-			</svg>
-			<svg class="justify-self-center rotate-center-left" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-				</svg>
-				<div id="Kompetencer"></div>
-</div>
-<section class="flex flex-col md:flex-row md:px-44 md:gap-32">
+<Stjerner />
+<div id="Kompetencer"></div>
+<section class="flex flex-col md:flex-row md:px-44 md:gap-32 ">
 	<div class="px-6">
 	<h2 class="text-black">Mine faglige kompetencer</h2>
 	<div class="flex flex-row">
@@ -317,24 +322,11 @@ import Rating from "../components/Rating.astro";
 </div>
 	</article>
 </section>
-<div class="flex flex-col items-center gap-14 z-0 pb-24">
-	<svg class="justify-self-center rotate-center" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-	  <path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-	  </svg>
-	  <svg class="justify-self-center rotate-center-left" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-		  <path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-		  </svg>
-		  <svg class="justify-self-center rotate-center" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-			  <path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-			  </svg>
-			  <svg class="justify-self-center rotate-center-left" width="50" height="50" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-				  <path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
-				  </svg>
-  </div>
-<article id="HvadJegSoger" class="md:px-44 pt-20">
-	<Rating/>
+<Stjerner />
+<article id="HvadJegSoger" class="md:pt-0 pt-5">
+	<Bg2 />
 </article>
-<Bg2 />
+
 <!-- <article>
 		<h1>Index overskrift</h1>
 		<Button>Klik!</Button>
