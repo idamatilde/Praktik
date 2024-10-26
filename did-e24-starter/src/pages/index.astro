@@ -40,21 +40,22 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 </div>
 	<Image class="w-max h-max md:w-[auto] md:h-[40rem] pl-10 col-start-5 col-span-3" src={cutout} alt="Udklip af mig"></Image>
 	</section> -->
-	<section id="hero" class="md:grid md:grid-cols-7 md:pl-80 md:pr-40 hidden">
-		<Image class="h-max w-auto col-span-5" src={text1} alt="multimedie-"></Image>
-		<div class="col-start-1 col-span-4  ">
+	<section id="hero" class="grid grid-cols-2 md:grid-cols-7 md:pl-80 md:pr-40">
+		<!-- <Image class="h-max w-auto col-span-5" src={text1} alt="multimedie-"></Image> -->
+		<h1 class="hidden md:flex md:pl-20 md:text-[8rem] text-black m-0">Multimedie-</h1>
+		<div class="md:col-start-1 md:col-span-4  ">
 			<div class="flex flex-col flex-end items-end h-min">
-			<Image class="w-auto h-30" src={text2} alt="multimedie-"></Image>
-			<Image class="pt-10" src={text3} alt="multimedie-"></Image>	
-			<Image class="" src={text4} alt="multimedie-"></Image>
+				<h1 class=" flex md:hidden md:pl-20 md:text-[8rem] text-black m-0">Multimedie-</h1>
+				<h1 class="md:text-[8rem] text-black m-0">Designer</h1>
+			<h2 class="md:text-[4rem] text-black m-0 pt-8">med en</h2>
+			<h2 class="md:text-[4rem] text-black m-0">passion for</h2>
 			<div class="grid grid-cols-2 z-20 mt-4 lg:mt-0">
 			<div class="lg:col-span-2 mr-4 md:mr-0"><TekstAnimation> <TekstAnimation/></div>
 		  </div>
 			</div>
 		</div>
-		
 </div>
-	<Image class="w-max h-max md:w-[auto] md:h-[40rem] pl-10 col-start-5 col-span-3" src={cutout} alt="Udklip af mig"></Image>
+	<Image class="w-auto h-96 md:w-[auto] md:h-[40rem] pt-9 md:pt-0 pl-0 md:pl-10 md:col-start-5 md:col-span-3" src={cutout} alt="Udklip af mig"></Image>
 	</section>
 	<div id="HvemErJeg"></div>
 	<Bg1><section class="bg-[#398E7A] md:grid md:grid-cols-2 flex flex-col md:px-44 px-6">
@@ -326,7 +327,13 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 <article id="HvadJegSoger" class="md:pt-0 pt-5">
 	<Bg2 />
 </article>
-
+<div class="relative -translate-y-2/3"><Stjerner/></div>
+<section>
+	<article class="grid md:grid-cols-2">
+		<div class=""></div>
+		<div class=""></div>
+	</article>
+</section>
 <!-- <article>
 		<h1>Index overskrift</h1>
 		<Button>Klik!</Button>
