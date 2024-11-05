@@ -39,7 +39,7 @@
   }
 
   h1 {
-    @apply font-black text-4xl md:text-7xl text-center;
+    @apply font-black text-3xl md:text-6xl lg:text-7xl;
   }
   h2 {
     @apply font-black text-3xl md:text-5xl;
@@ -79,50 +79,34 @@
   p {
     @apply league-spartan-font;
     color: #ffffff;
-    font-size: 23px;
+    font-size: 22px;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+    line-height: 29px;
   }
   li {
     @apply league-spartan-font;
   }
   a {
-    color: inherit;
-    text-decoration: none;
-    font-weight: bold;
   }
-
-  /* Underline styles - details of technique here: https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
-  a {
-    background: linear-gradient(
-        to right,
-        rgba(180, 174, 125, 1),
-        rgba(180, 174, 125, 1)
-      ),
-      linear-gradient(
-        to right,
-        rgb(225, 198, 0, 1),
-        rgb(225, 198, 0, 1),
-        rgb(225, 198, 0, 1)
-      );
-    background-size: 100% 0.2em, 0 0.2em;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-  }
-
-  a:hover,
-  :focus {
-    background-size: 0 0.2em, 100% 0.2em;
+  @media (max-width: 1200px) {
+    p {
+      @apply league-spartan-font;
+      color: #ffffff;
+      font-size: 18px;
+      margin-top: 0.4rem;
+      margin-bottom: 0.7rem;
+      line-height: 20px;
+    }
   }
 
   @media (max-width: 768px) {
     p {
       @apply league-spartan-font;
       color: #ffffff;
-      font-size: 15px;
+      font-size: 14px;
       margin-top: 0.4rem;
-      margin-bottom: 0.7rem;
+      margin-bottom: 0.8rem;
     }
   }
 }

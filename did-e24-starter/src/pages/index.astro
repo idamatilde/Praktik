@@ -40,61 +40,77 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 </div>
 	<Image class="w-max h-max md:w-[auto] md:h-[40rem] pl-10 col-start-5 col-span-3" src={cutout} alt="Udklip af mig"></Image>
 	</section> -->
-	<section id="hero" class="grid grid-cols-2 md:grid-cols-7 md:pl-80 md:pr-40">
-		<!-- <Image class="h-max w-auto col-span-5" src={text1} alt="multimedie-"></Image> -->
-		<h1 class="hidden md:flex md:pl-20 md:text-[8rem] text-black m-0">Multimedie-</h1>
-		<div class="md:col-start-1 md:col-span-4  ">
+	<section id="hero" class="grid grid-cols-2 lg:grid-cols-7 md:pb-40 lg:pb-0 md:pl-20 md:pr-20 lg:pl-80 lg:pr-40">
+		<h1 class="hidden md:flex md:pl-20 md:text-[6rem] lg:text-[8rem] text-black m-0">Multimedie-</h1>
+		<div class="md:col-start-1 md:col-span-4 md:pt-2 pt-1">
 			<div class="flex flex-col flex-end items-end h-min">
-				<h1 class=" flex md:hidden md:pl-20 md:text-[8rem] text-black m-0">Multimedie-</h1>
-				<h1 class="md:text-[8rem] text-black m-0">Designer</h1>
-			<h2 class="md:text-[4rem] text-black m-0 pt-8">med en</h2>
+				<h1 class="flex md:hidden md:pl-20 md:text-[6rem] lg:text-[8rem] text-4xl text-black m-0">Multimedie-</h1>
+				<h1 class="lg:text-[8rem] md:text-[6rem] text-4xl text-black m-0">Designer</h1>
+			<h2 class="md:text-[4rem] text-black m-0 md:pt-8 pt-4">med en</h2>
 			<h2 class="md:text-[4rem] text-black m-0">passion for</h2>
-			<div class="grid grid-cols-2 z-20 mt-4 lg:mt-0">
-			<div class="lg:col-span-2 mr-4 md:mr-0"><TekstAnimation> <TekstAnimation/></div>
-		  </div>
+			<div class="grid grid-cols-2 z-0 mt-4 lg:mt-0">
+			<div class="lg:col-span-2 md:mr-0"><TekstAnimation> <TekstAnimation/></div>
 			</div>
 		</div>
 </div>
-	<Image class="w-auto h-96 md:w-[auto] md:h-[40rem] pt-9 md:pt-0 pl-0 md:pl-10 md:col-start-5 md:col-span-3" src={cutout} alt="Udklip af mig"></Image>
+	<Image class="w-auto h-96 md:w-52 md:h-[auto] lg:w-72 lg:h-[auto] pt-9 md:pt-0 pl-4 md:pl-10 md:col-start-5 md:col-span-3" src={cutout} alt="Udklip af mig"></Image>
 	</section>
+<!-- <article class="grid grid-cols-3">
+<div class="col-start-1 col-span-2">
+	<div>
+		<div class="flex flex-col flex-end items-end h-min">
+			<h1 class="md:flex text-black m-0">Multimedie-</h1>
+			<h1 class="md:text-[8rem] text-black m-0">Designer</h1>
+		<h2 class="md:text-[4rem] text-black m-0 pt-8">med en</h2>
+		<h2 class="md:text-[4rem] text-black m-0">passion for</h2>
+		<div class="z-0 mt-4">
+		<div class=""><TekstAnimation> <TekstAnimation/></div>
+		</div>
+	</div>
+</div>
+<Image class="w-auto h-72 md:w-[auto] md:h-[40rem] pt-9 pl-0 col-start-3" src={cutout} alt="Udklip af mig"></Image>
+	</article> -->
 	<div id="HvemErJeg"></div>
-	<Bg1><section class="bg-[#398E7A] md:grid md:grid-cols-2 flex flex-col md:px-44 px-6">
+	<Bg1><section class="bg-[#398E7A] md:grid md:grid-cols-2 flex flex-col md:px-20 lg:px-44 px-6">
 		<div class="flex flex-row md:flex-col md:pb-0 pb-5">
-		<Image class="md:h-auto h-[100%] md:w-[400px] w-48" src={frimaerke} alt="billede af mig med frimærkeramme"></Image>
+		<Image class="md:h-auto h-[100%] md:w-[300px] lg:w-[400px] w-48" src={frimaerke} alt="billede af mig med frimærkeramme"></Image>
 		<h2 class=".fisterra md:hidden flex flex-wrap text-wrap text-6xl">Lidt om mig</h2>
 	</div>
-		<div class="flex flex-col">
+		<div class="flex flex-col max-w-[500px] md:max-w-[100%]">
 		<h2 class=".fisterra hidden md:block">Lidt om mig</h2>
-		<p>Mit navn er Ida-Matilde, og jeg er 21 år gammel. Jeg studerer multimediedesign på Københavns Erhvervsakademi, hvor jeg nu er halvvejs gennem min uddannelse.</p>
-		<p>Min interesse for digital design blev vakt på Krabbesholm Højskole, hvor jeg tog to semestre. På højskolen havde jeg et lærerigt forløb på linjen “Visuel Kommunikation”, hvor jeg b.la blev introduceret for Adobe-pakken.</p>
-	<p>Som digital designer brænder jeg for at skabe spændende visuelle løsninger og producere kreativt indhold.</p>	
+		<p>Mit navn er <span class="text-[#ee4799] font-medium">Ida-Matilde</span>, og jeg er 21 år gammel. Jeg studerer <span class="text-[#ee4799] font-medium">multimediedesign</span> på Københavns Erhvervsakademi, hvor jeg nu er halvvejs gennem min uddannelse.</p>
+		<p>Min interesse for <span class="text-[#ee4799]">digital design</span> blev vakt på Krabbesholm Højskole, hvor jeg tog to semestre. På højskolen havde jeg et lærerigt forløb på linjen “Visuel Kommunikation”, hvor jeg b.la blev introduceret for <span class="text-[#ee4799] font-medium">Adobe-pakken</span>.</p>
+	<p>Som <span class="text-[#ee4799]">digital designer</span> brænder jeg for at skabe spændende visuelle løsninger og producere kreativt indhold.</p>	
 	</div>
 	</section>
 </Bg1>
-	<section class="w-full overflow-hidden md:relative md:-translate-y-1/4">
-<Stjerner />
+	<section class="w-full overflow-hidden relative md:-translate-y-96 lg:-translate-y-96">
+<div class="md:hidden flex"><Stjerner /></div>	
 <div id="Kompetencer"></div>
-<section class="flex flex-col md:flex-row md:px-44 md:gap-32 ">
-	<div class="px-6">
+<section class="flex flex-col lg:flex-row md:px-44 md:gap-32 ">
+	<div class="lg:px-10 md:px-6 px-4 max-w-[500px] md:max-w-[100%]">
 	<h2 class="text-black">Mine faglige kompetencer</h2>
-	<div class="flex flex-row">
-	<div><p class="text-black">Under min uddannelse lærer jeg diverse teknikker og programmer, som jeg bruger til mine projekter. Som digital designer stræber jeg altid efter at kombinere kreativitet med funktionalitet i mine designs. Derfor starter min arbejdsprocess med design- og trendresearch kombineret med brugerresearch.</p>
-		<p class="text-black">Mine skoleprojekter består bl.a. af at arbejde med interaktive Figma prototyper, som jeg derefter koder i VSCode. Jeg har kodet i HTML, CSS, og lidt JavaScript, og benyttet mig af Astro, Tailwind, Animate.css og Alpine. Jeg elsker at arbejde med grafisk design til de visuelle elementer der skal bruges til digitale løsninger, eller So-Me indhold.
+	<div class="flex flex-col">
+	<p class="text-black">Under min uddannelse lærer jeg diverse teknikker og programmer til at lave digitalt indhold og kreative webløsninger.
+	</p>
+		<p class="text-black">Mine skoleprojekter består bl.a. af at arbejde med interaktive Figma-prototyper, som jeg derefter koder i VSCode. Jeg har kodet i HTML, CSS og lidt JavaScript, og benyttet mig af Astro, Tailwind, Animate.css og Alpine.
+		</p>
+		<p class="text-black">Jeg elsker at arbejde med grafisk design og visuelle elementer og stræber altid efter at kombinere kreativitet med funktionalitet i mine designs. I min fritid arbejder jeg også med personlige projekter, som inkluderer social media-indhold og optimering af visuel identitet for mindre virksomheder.
 		</p>
 		<p class="text-black">
-			I min fritid har jeg også personlige projekter, som inkluderer social media-indhold og optimering af visuel identitet for mindre virksomheder. Jeg er altid målrettet og fokuseret på at få projekter til at lykkes, og jeg er nysgerrig efter at lære mere om alle aspekter af dem. </p>
-	</div>
+			Jeg er altid målrettet og fokuseret på at få projekter til at lykkes, og jeg er nysgerrig efter at lære mere om alle aspekter af dem.</p>
+
 	</div>
 </div>
-	<article>
-		<div class="border-black border-solid border-2 md:m-0 md:mt-8 md:p-1 m-4">
+	<article class="md:flex flex-col align-middle place-self-center md:pt-0 pt-6 lg:pb-0 pb-10">
+		<div class="border-black border-solid border-2 w-fit md:p-2 p-0">
 		<div id="illustrator" class="flex flex-row content-center items-center gap-3 p-5">
 		<svg width="55" height="55" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M44.9696 1.46729H6.1162C3.81052 1.46729 1.94141 3.33664 1.94141 5.64262V44.501C1.94141 46.807 3.81052 48.6763 6.1162 48.6763H44.9696C47.2752 48.6763 49.1444 46.807 49.1444 44.501V5.64262C49.1444 3.33664 47.2752 1.46729 44.9696 1.46729Z" stroke="#075225" stroke-width="2" stroke-miterlimit="10"/>
 			<path d="M17.4431 31.4322L15.3974 37.3473H11.1113L19.1269 14.1324H24.5681L32.9176 37.3473H28.3254L26.1962 31.4322H17.4431ZM25.2082 27.8554C23.3713 22.5388 22.258 19.3794 21.7292 17.4031C21.1169 19.5047 19.8923 23.2903 18.4172 27.8554H25.2082Z" fill="#075225"/>
 			<path d="M35.7988 12.7964H39.9736V16.8743H35.7988V12.7964ZM35.7988 20.0893H39.9736V37.3473H35.7988V20.0893Z" fill="#075225"/>
 			</svg>
-			<div class="flex-row flex gap-3"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<div class="flex-row flex gap-3 md:w-auto md:h-auto w-48"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 				</svg>
 				<svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +141,7 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 				<path d="M8.35352 13.0299H17.5949C22.3326 13.0299 25.5554 15.6883 25.5554 19.9859C25.5554 24.8069 21.9607 27.121 17.4571 27.121H12.6781V35.9916H8.35352V13.0299ZM12.6781 23.6499H16.9338C19.523 23.6499 21.1344 22.5342 21.1344 20.0823C21.1344 17.6305 19.344 16.501 17.0026 16.501H12.6781V23.6499Z" fill="#075225"/>
 				<path d="M31.5337 30.9503C31.7345 31.7129 32.2057 32.3764 32.8594 32.8174C33.5131 33.2583 34.3048 33.4465 35.087 33.347C37.084 33.347 37.8415 32.5757 37.8415 31.3635C37.8415 30.1514 37.0978 29.5729 34.3846 28.8979C29.0546 27.5894 28.1043 25.9502 28.1043 23.5673C28.1043 21.1843 29.881 18.5259 34.7702 18.5259C39.6595 18.5259 41.4499 21.2807 41.6565 23.5948H37.6762C37.4834 22.8097 36.9325 21.5011 34.5774 21.5011C32.7319 21.5011 32.1535 22.3414 32.1535 23.2229C32.1535 24.1045 32.7457 24.7105 35.6379 25.3855C41.1469 26.6803 42.0421 28.5536 42.0421 31.0743C42.0421 33.9531 39.811 36.3911 34.9355 36.3911C30.06 36.3911 27.8564 33.9806 27.457 30.9503H31.5337Z" fill="#075225"/>
 				</svg>
-				<div class="flex-row flex gap-3"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="flex-row flex gap-3 md:w-auto md:h-auto w-48"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 					</svg>
 					<svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,7 +181,7 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 				<path d="M10.1992 13.2839H19.4268C24.1645 13.2839 27.3873 15.9424 27.3873 20.2537C27.3873 25.0609 23.8064 27.3888 19.2891 27.3888H14.51V36.2594H10.1992V13.2839ZM14.51 23.9039H18.8208C21.41 23.9039 23.0214 22.802 23.0214 20.3364C23.0214 17.8708 21.2448 16.7688 18.8897 16.7688H14.51V23.9039Z" fill="#075225"/>
 				<path d="M30.5 23.8212C30.5 21.8928 30.5 20.4328 30.5 19.1793H34.5491C34.5491 19.6063 34.6593 21.1766 34.6593 22.3474C35.0902 21.253 35.8536 20.3213 36.8419 19.6838C37.8303 19.0462 38.9937 18.7349 40.1683 18.7936V22.7744C36.7252 22.7744 34.6593 23.9728 34.6593 28.5321V36.2594H30.5275L30.5 23.8212Z" fill="#075225"/>
 				</svg>
-				<div class="flex-row flex gap-3"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="flex-row flex gap-3 md:w-auto md:h-auto w-48"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 					</svg>
 					<svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +221,7 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 				<path d="M16.9756 14.4148V37.8383H12.5781V14.4148H16.9756Z" fill="#075225"/>
 				<path d="M37.3479 13.0095V33.0045C37.3479 34.6064 37.3479 36.2223 37.3479 37.8382H33.4141C33.3073 37.1637 33.2416 36.4833 33.2174 35.8008C32.3042 37.3183 30.7025 38.3019 28.0191 38.3019C23.5794 38.3019 20.7695 34.6766 20.7695 29.295C20.7695 23.9133 23.748 20.0211 28.6372 20.0211C31.3347 20.0211 32.6835 21.0328 33.105 21.8759V13.0095H37.3479ZM25.153 29.1685C25.153 32.8359 26.6984 34.7891 29.1852 34.7891C32.7537 34.7891 33.3017 31.9788 33.3017 28.9999C33.3017 25.7119 32.7537 23.3794 29.3397 23.3794C26.6282 23.4356 25.153 25.5714 25.153 29.1685Z" fill="#075225"/>
 				</svg>
-				<div class="flex-row flex gap-3"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="flex-row flex gap-3 md:w-auto md:h-auto w-48"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 					</svg>
 					<svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +269,7 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 				<path d="M45.5094 1.04224H5.64831C3.28283 1.04224 1.36523 2.96008 1.36523 5.32586V45.1922C1.36523 47.5579 3.28283 49.4758 5.64831 49.4758H45.5094C47.8749 49.4758 49.7925 47.5579 49.7925 45.1922V5.32586C49.7925 2.96008 47.8749 1.04224 45.5094 1.04224Z" stroke="#075225" stroke-width="2" stroke-miterlimit="10"/>
 				<path d="M25.6065 25.2591C25.6065 23.7387 26.198 22.2806 27.251 21.2056C28.304 20.1305 29.7321 19.5266 31.2212 19.5266C32.7103 19.5266 34.1385 20.1305 35.1915 21.2056C36.2444 22.2806 36.836 23.7387 36.836 25.2591C36.836 26.7794 36.2444 28.2375 35.1915 29.3125C34.1385 30.3876 32.7103 30.9915 31.2212 30.9915C29.7321 30.9915 28.304 30.3876 27.251 29.3125C26.198 28.2375 25.6065 26.7794 25.6065 25.2591ZM14.377 36.724C14.377 35.2037 14.9685 33.7456 16.0215 32.6705C17.0744 31.5955 20.6081 30.9915 22.0972 30.9915H25.6065V36.724C25.6065 38.2444 25.0149 39.7024 23.9619 40.7775C22.909 41.8525 21.4808 42.4565 19.9917 42.4565C18.5026 42.4565 17.0744 41.8525 16.0215 40.7775C14.9685 39.7024 14.377 38.2444 14.377 36.724ZM25.6065 8.06165V19.5266H31.2212C32.7103 19.5266 34.1385 18.9226 35.1915 17.8476C36.2444 16.7725 36.836 15.3145 36.836 13.7941C36.836 12.2738 36.2444 10.8157 35.1915 9.74065C34.1385 8.6656 32.7103 8.06165 31.2212 8.06165H25.6065ZM14.377 13.7941C14.377 15.3145 14.9685 16.7725 16.0215 17.8476C17.0744 18.9226 20.6081 19.5266 22.0972 19.5266H25.6065V8.06165H19.9917C18.5026 8.06165 17.0744 8.6656 16.0215 9.74065C14.9685 10.8157 14.377 12.2738 14.377 13.7941ZM14.377 25.2591C14.377 26.7794 14.9685 28.2375 16.0215 29.3125C17.0744 30.3876 20.6081 30.9915 22.0972 30.9915H25.6065V19.5266H22.0972C20.6081 19.5266 17.0744 20.1305 16.0215 21.2056C14.9685 22.2806 14.377 23.7387 14.377 25.2591Z" fill="#075225"/>
 			</svg>
-			<div class="flex-row flex gap-3"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<div class="flex-row flex gap-3 md:w-auto md:h-auto w-48"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 				</svg>
 				<svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -283,13 +299,13 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 				<path d="M44.7547 1H5.24528C2.90068 1 1 2.90068 1 5.24528V44.7547C1 47.0993 2.90068 49 5.24528 49H44.7547C47.0993 49 49 47.0993 49 44.7547V5.24528C49 2.90068 47.0993 1 44.7547 1Z" stroke="#075225" stroke-width="2" stroke-miterlimit="10"/>
 				<path d="M40.6224 38.6415L32.2734 42.0377L18.5469 28.4528L9.91487 35.2453L6.66016 33.4056V16.7075L9.91487 15.0094L18.5469 21.8019L32.2734 8.07544L40.6224 11.4717V38.6415ZM20.1036 25.0566L32.1319 37.0849V13.0283L20.1036 25.0566ZM9.91487 31.4245L17.2734 25.0566L10.0564 18.6886L9.91487 31.4245Z" fill="#075225"/>
 				</svg>	
-				<div class="flex-row flex gap-3"><svg class="hover:wobble-hor-bottom" width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<div class="flex-row flex gap-3 md:w-auto md:h-auto w-48"><svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 					</svg>
-					<svg class="hover:wobble-hor-bottom" width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 						</svg>
-						<svg class="hover:wobble-hor-bottom" width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<svg width="40" height="40" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M19.5387 15.8676L33.0755 14.0751V19.2905L19.5322 17.6765L18.973 17.6099V18.173V18.3597V18.5351L19.0826 18.6721L27.6808 29.4198L22.7893 32.2131L17.4079 19.6567L17.278 19.3536H16.9483H16.7616H16.4415L16.3075 19.6444L10.4811 32.2874L6.11153 29.5257L14.6463 18.5699L14.7518 18.4344V18.2626V18.0759V17.5075L14.1881 17.58L0.925781 19.2852V14.0735L14.0905 15.7781L14.6547 15.8512V15.2823V15.0955V14.9251L14.5507 14.7902L6.11643 3.85293L10.8386 1.14214L16.4021 13.6185L16.5342 13.9149H16.8587H17.0454H17.3729L17.5038 13.6147L22.9811 1.05196L27.6024 3.67066L19.0751 14.8825L18.973 15.0166V15.1852V15.3719V15.9425L19.5387 15.8676Z" fill="#FB3BA5" stroke="#FB3BA5"/>
 							</svg>
 							<svg class="h-[40px] w-[40px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.65 34.83">
@@ -323,14 +339,14 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 	</article>
 </section>
 
-<article id="HvadJegSoger" class="md:pt-0 pt-5">
+<article id="HvadJegSoger" class="mt-10 lg:mt-0 sm:mt-0">
 	<Stjerner />
 	<Rating/>
 </article>
-<div><Stjerner/></div>
+<div class="md:mt-20 mt-5"><Stjerner/></div>
 <section>
-	<article class="grid md:grid-cols-2 md:px-44">
-		<div class="border-black border-solid border-2 p-4 flex flex-col content-center items-center md:w-[30rem] h-min">
+	<article class="grid lg:grid-cols-2 grid-cols-1 md:px-44 px-6 md:-order-1 lg:pb-0 pb-20 max-w-[500px] md:max-w-[100%]" >
+		<div class="border-black border-solid border-2 md:order-first order-last lg:pb-10 p-4 flex flex-col content-center items-center mr-0 md:mr-12 md:w-auto h-min">
 			<h2 class="text-black">Kontaktinfo</h2>
 		<hr class="h-1 w-[90%] my-1 bg-[#ee4799]">
 		<div class="flex flex-row content-center items-center w-[80%] justify-between"><svg width="70" height="70" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -348,13 +364,13 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 			</clipPath>
 			</defs>
 			</svg>
-			<p class="text-black text-2xl">30 63 79 09</p>
+			<p class="text-black md:text-2xl">30 63 79 09</p>
 			</div>
 			<hr class="h-1 w-[90%] my-1 bg-[#ee4799]">
 		<div class="flex flex-row  content-center items-center w-[80%] justify-between"><svg width="70" height="70" viewBox="0 0 52 42" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path d="M51.2603 37.3319C51.2879 37.2479 51.3067 37.1593 51.3067 37.066V6.28785C51.3067 6.194 51.2879 6.10478 51.2597 6.0202C51.2556 6.00861 51.2533 5.99703 51.2486 5.98544C51.211 5.88637 51.1558 5.79716 51.0865 5.71895C51.0818 5.71373 51.0812 5.70736 51.0765 5.70215C51.0736 5.69925 51.0701 5.69809 51.0671 5.6952C50.9932 5.61756 50.9057 5.555 50.8076 5.50807C50.8 5.5046 50.7941 5.49996 50.7865 5.49648C50.6937 5.45535 50.5927 5.43218 50.4865 5.42523C50.4759 5.42465 50.4659 5.42233 50.4554 5.42233C50.4454 5.42175 50.4366 5.41943 50.4266 5.41943H1.57464C1.56466 5.41943 1.55526 5.42175 1.54528 5.42233C1.53589 5.42291 1.52649 5.42465 1.5171 5.42523C1.40965 5.43218 1.30691 5.45593 1.21297 5.49764C1.2071 5.49996 1.2024 5.50402 1.19653 5.50633C1.09672 5.55326 1.00806 5.61699 0.933495 5.69577C0.930559 5.69867 0.927036 5.69925 0.9241 5.70215C0.919403 5.70678 0.918816 5.71316 0.914119 5.71837C0.844838 5.79658 0.789061 5.88637 0.751485 5.98544C0.746788 5.99703 0.744439 6.00861 0.74033 6.02078C0.712147 6.10536 0.693359 6.19458 0.693359 6.28843V37.0671C0.693359 37.1622 0.712734 37.2525 0.741504 37.3383C0.745614 37.3499 0.747962 37.3609 0.752072 37.3725C0.790235 37.4721 0.846599 37.5619 0.916468 37.6401C0.920578 37.6447 0.921752 37.6505 0.925862 37.6552C0.929385 37.6592 0.934082 37.6615 0.938191 37.6656C0.966961 37.6951 0.998666 37.7212 1.03154 37.7467C1.04622 37.7577 1.05914 37.771 1.0744 37.7815C1.11316 37.8081 1.15484 37.8295 1.1977 37.8492C1.20827 37.8539 1.21766 37.8614 1.22823 37.8655C1.3345 37.9101 1.45134 37.9356 1.57405 37.9356H50.4254C50.5481 37.9356 50.665 37.9107 50.7712 37.8655C50.7877 37.8585 50.8029 37.8481 50.8188 37.84C50.8552 37.822 50.8916 37.8035 50.9251 37.7809C50.9427 37.7687 50.9585 37.7531 50.9756 37.7397C51.0055 37.716 51.0349 37.6922 51.0607 37.665C51.0654 37.6604 51.0707 37.6569 51.0754 37.6523C51.0801 37.6471 51.0812 37.6401 51.0859 37.6349C51.1546 37.5573 51.2098 37.468 51.2474 37.3696C51.2533 37.3568 51.2562 37.3446 51.2603 37.3319ZM2.45533 8.25874L17.2785 21.6187L2.45533 35.0853V8.25874ZM32.8368 20.9641C32.7758 21.0034 32.7112 21.0365 32.6601 21.0921C32.6407 21.1129 32.6343 21.1402 32.6172 21.1622L26.0003 27.1258L3.84447 7.15685H48.1562L32.8368 20.9641ZM18.5843 22.7953L25.4061 28.9438C25.5747 29.0955 25.7872 29.1714 26.0003 29.1714C26.2134 29.1714 26.426 29.0955 26.5939 28.9438L33.3312 22.8718L48.1521 36.1976H3.83156L18.5843 22.7953ZM34.6376 21.6946L49.5453 8.25874V35.0992L34.6376 21.6946Z" fill="#075225" stroke="#075225"/>
 			</svg>			
-			<p class="text-black text-2xl">imkgn@hotmail.com</p>
+			<p class="text-black md:text-2xl">imkgn@hotmail.com</p>
 			</div>
 			<hr class="h-1 w-[90%] my-1 bg-[#ee4799]">
 		<div class="flex flex-row content-center items-center w-[80%] justify-between"><svg class="p-1" width="70" height="70" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -368,7 +384,7 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 			</clipPath>
 			</defs>
 			</svg>
-			<a href="https://www.linkedin.com/in/ida-matilde-greve-nielsen-04656b305" target="_blank"><p class="text-black text-2xl">www.linkedin.com</p></a>
+			<a href="https://www.linkedin.com/in/ida-matilde-greve-nielsen-04656b305" target="_blank"><p class="text-black md:text-2xl">www.linkedin.com</p></a>
 			</div>
 			<hr class="h-1 w-[90%] my-1 bg-[#ee4799]">
 		<div class="flex flex-row content-center items-center w-[80%] justify-between"> <svg class="p-1" width="70" height="70" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -381,14 +397,14 @@ import TekstAnimation from "../components/TekstAnimation.astro";
 			<rect width="41" height="42" fill="white"/>
 			</clipPath>
 			</defs>
-			</svg>
-						
-			<a href="https://github.com/idamatilde" target="_blank"><p class="text-black text-2xl">https://github.com</p></a>
+			</svg>		
+			<a href="https://github.com/idamatilde" target="_blank"><p class="text-black md:text-2xl">https://github.com</p></a>
 			</div>
 			<hr class="h-1 w-[90%] my-1 bg-[#ee4799]">
 		</div>
-		<div class="flex flex-col gap-10"><h1 class="text-black">Hvad jeg søger:</h1><p class="text-black">Jeg søger en arbejdsplads der kan føre mig ud i projekter, hvor arbejdet er både <span class="text-[#ee4799]">udfordrende</span> og <span class="text-[#ee4799]">lærerigt</span>.
-			</p>
+		<div class="flex flex-col lg:pt-0 pt-10">
+			<h1 class="text-black text-left">Hvad jeg søger:</h1><p class="text-black">Jeg søger en arbejdsplads der kan føre mig ud i projekter, hvor arbejdet er både <span class="text-[#ee4799]">udfordrende</span> og <span class="text-[#ee4799]">lærerigt</span>.
+			</p> 
 		<p class="text-black">Specielt arbejdsopgaver vedrørende <span class="text-[#ee4799]">digital design</span> og <span class="text-[#ee4799]">digitalt indhold</span> er jeg interesseret i. Om arbejdet er i Figma, Illustrator eller noget tredje, er jeg ikke specifik med. Jeg er klar på alt i kan byde af <span class="text-[#ee4799]">viden</span> fra <span class="text-[#ee4799]">arbejdsfeltet</span>.</p>
 	<p class="text-black">Jeg glæder mig til at se de kompetencer jeg har lært på KEA anvendes i et rigtigt arbejdsmiljø, og håber, at det kan blive hos jer!</p></div>
 	</article>

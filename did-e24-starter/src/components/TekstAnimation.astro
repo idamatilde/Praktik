@@ -2,7 +2,7 @@
 
 ---
 
-<div class="container mr-5 text-right mt-3 ">
+<div class="container md:mr-5 mr-0 text-right mt-3 ">
   <div class="text-wrapper flex flex-row-reverse ">
       <div class="box b1 flex-end"><h1>User Interface</h1></div>
       <div class="box b2 flex-end"><h1>Digital design</h1></div>
@@ -16,7 +16,12 @@
 
 .box {
   opacity: 0%;
-  position:absolute
+  position:absolute;
+  z-index: 0;
+}
+
+.container{
+  z-index: 0;
 }
 
 .b1 {
@@ -57,11 +62,6 @@
     }
   }
   
-  
-  .box {
-      opacity: 0%;
-      position:absolute
-  }
   
   .b1 {
       animation: ani1 12s infinite;
