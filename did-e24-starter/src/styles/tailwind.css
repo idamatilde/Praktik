@@ -76,6 +76,13 @@
     font-style: normal;
   }
 
+  #HvemErJeg,
+  #Kompetencer,
+  #HvadJegSoger,
+  #Kontakt {
+    scroll-behavior: smooth;
+  }
+
   p {
     @apply league-spartan-font;
     color: #ffffff;
