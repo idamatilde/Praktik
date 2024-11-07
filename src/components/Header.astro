@@ -1,6 +1,49 @@
 ---
 ---
-<section class="bg-[#357868]">
+
+<div x-data="{ showmenu: false }" class=" fixed top-0 w-full z-50" >
+  <div id="navbar" class="justify-between lg:justify-around items-center bg-[#357868]">
+<nav id="desktopmenu" class=" hidden lg:block items-center bg-[#357868] py-1">
+    <div class="container mx-auto">
+      <ul class="flex flex-row items-center">
+        <li class="relative flex-1 text-center">
+          <a class="text-white scroll transition-all text-lg" href="#HvemErJeg">Hvem er jeg?</a>
+        </li>
+        <li class="relative flex-1 text-center">
+          <a class="text-white scroll transition-all text-lg" href="#Kompetencer">Kompetencer</a>
+        </li>
+        <li class="relative flex-1 text-center">
+          <a class="text-white scroll transition-all text-lg" href="#HvadJegSoger">Tidligere projekter</a>
+        </li>
+        <li class="relative flex-1 text-center">
+          <a class="text-white scroll transition-all text-lg" href="#Kontakt">Kontakt mig</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <button id="burgermenu" class="lg:hidden self-center pt-2 pl-3 z-50 " x-on:click="showmenu = ! showmenu"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+</button>
+</div>
+<nav id="mobilmenu" class="flex flex-col content-center" 
+x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+<ul class="bg-[#40947D] justify-start" >
+  <a href="#HvemErJeg"><li class=" text-white text-left scroll scrolltext-center py-2 border-b-2 background text-lg pl-3">Hvem er jeg?</li></a>
+  <a href="#Kompetencer"><li class=" text-white text-left scroll scrolltext-center py-2 border-b-2 background text-lg pl-3">Kompetencer</li></a>
+  <a href="#HvadJegSoger"><li class=" text-white text-left scroll scrolltext-center py-2 border-b-2 background text-lg pl-3">Tidligere projekter</li></a>
+  <a href="#Kontakt"><li class="text-white text-left scroll scrolltext-center py-2 border-b-2 background text-lg pl-3">Kontakt mig</li></a>
+</ul>
+</nav>
+</div>
+<div class="scroll_indicator">
+  <div class="simple_container">
+    <div class="simple_indicator"></div>
+  </div>
+</div>
+
+
+<!-- <section class="bg-[#357868]">
 <div class="burger-menu">
   <div class="bar"></div>
   <div class="bar"></div>
@@ -21,7 +64,7 @@
     <div class="simple_indicator"></div>
   </div>
 </div>
-</section>
+</section> -->
 <style>
 .simple_container {
       width: 100%;
@@ -32,75 +75,19 @@
       width: 0%;
       height: 100%;
       background-color:#FB3BA5;}
-  .header_nav_container {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-  }
-  #nav-bar-top {
-    text-align: center;
-    margin: 0 auto;
-    left: 0px;
-    right: 0px;
-    float: clear;
-  }
-  .topnav {
-    flex-wrap: wrap;
-  }
-  a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .burger-menu {
-    cursor: pointer;
-    z-index: 2;
-    display: none; /* Hide the burger menu icon by default */
-    cursor: pointer;
-    position: fixed; /* Position the burger menu fixed to the viewport */
-    top: 20px; /* Adjust the distance from the top */
-    right: 20px; /* Adjust the distance from the right */
-    z-index: 9999; /* Ensure the burger menu appears above other content */
-  }
-
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #FB3BA5;
-    margin: 5px 0;
-    transition: 0.4s;
-  }
-
-  /* Add hover effect to the burger menu lines */
-  .bar:hover {
-    transform: scale(1.1);
-  }
-
-  @media (max-width: 768px) {
-    .topnav {
-      display: none; /* Hide the navigation links by default on smaller screens */
-    }
-
-    .topnav.active {
-      display: flex; /* Show the navigation links when burger menu is clicked */
-    }
-
-    .burger-menu {
-      display: block; /* Show the burger menu icon on smaller screens */
-    }
-  
-  }
+ 
 </style>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.querySelector(".burger-menu");
-    const navLinks = document.querySelector(".topnav");
+ document.addEventListener("DOMContentLoaded", function () {
+  const burgerMenu = document.querySelector(".burger-menu");
+  const navLinks = document.querySelector(".topnav");
 
-    burgerMenu.addEventListener("click", function () {
-      navLinks.classList.toggle("active");
-    });
+  burgerMenu.addEventListener("click", function () {
+    navLinks.classList.toggle("active"); // Toggle the menu's visibility
+    // Toggle a class on the burger icon to animate the lines into a close "X"
+    burgerMenu.classList.toggle("active");
   });
+});
 </script>
 <script>
   window.addEventListener("scroll", onScroll);
