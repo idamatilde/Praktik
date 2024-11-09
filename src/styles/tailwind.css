@@ -63,12 +63,6 @@
 }
 
 @layer base {
-  .outfit {
-    font-family: "outfit";
-    font-weight: 400;
-    font-size: 22px;
-  }
-
   .league-spartan-font {
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
