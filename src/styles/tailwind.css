@@ -6,6 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* importering af adobe-font */
 @font-face {
   font-family: "fisterra-fora";
   src: url("https://use.typekit.net/af/6aab64/00000000000000007755a07f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
@@ -20,6 +21,7 @@
   font-stretch: normal;
 }
 
+/* styling af tekst */
 @layer base {
   .fisterra {
     font-family: "fisterra-fora";
@@ -32,7 +34,7 @@
   h4,
   h5,
   h6 {
-    @apply fisterra; /* Sørg for at klassen eksisterer */
+    @apply fisterra;
     color: #ffffff;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -58,7 +60,7 @@
   }
 
   li {
-    @apply fisterra; /* Sørg for at klassen eksisterer */
+    @apply fisterra;
   }
 }
 
@@ -112,6 +114,8 @@
     }
   }
 }
+
+/*animationer*/
 @layer utilities {
   .rotate-center {
     -webkit-animation: rotate-center 8s linear infinite both;
@@ -264,6 +268,8 @@
     }
   }
 }
+
+/* styling af cursor */
 body {
   cursor: url("/public/cursor/star-pointer.png"), auto;
 }
